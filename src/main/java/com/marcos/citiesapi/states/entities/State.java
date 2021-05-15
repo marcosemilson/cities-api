@@ -1,4 +1,4 @@
-package com.marcos.citiesapi.staties.entities;
+package com.marcos.citiesapi.states.entities;
 
 import java.util.List;
 import javax.persistence.Basic;

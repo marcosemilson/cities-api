@@ -1,9 +1,9 @@
-package com.marcos.citiesapi.staties.controllers;
+package com.marcos.citiesapi.states.controllers;
 
 import java.util.Optional;
 
-import com.marcos.citiesapi.staties.entities.State;
-import com.marcos.citiesapi.staties.repositories.StateRepository;
+import com.marcos.citiesapi.states.entities.State;
+import com.marcos.citiesapi.states.repositories.StateRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/staties")
+@RequestMapping("/states")
 public class StateResource {
 
   @Autowired
   private StateRepository repository;
 
   @GetMapping
-  public Page<State> staties(Pageable page){
+  public Page<State> states(Pageable page){
     return repository.findAll(page);
   }
 

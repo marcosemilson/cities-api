@@ -1,6 +1,6 @@
-package com.marcos.citiesapi.staties.repositories;
+package com.marcos.citiesapi.states.repositories;
 
-import com.marcos.citiesapi.staties.entities.State;
+import com.marcos.citiesapi.states.entities.State;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
